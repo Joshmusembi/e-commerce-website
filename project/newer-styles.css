@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: var(--orange);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.header {
+    width: 100%;
+    background:  black; /* Primary color */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s;
+    background: plum;
+}
+
+.navbar a:hover {
+    color: #FFEB3B; /* Accent color */
+}
+
+.logout-button {
+    background: #f44336;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.logout-button:hover {
+    background: #d32f2f;
+}
+
+.main-content {
+    background: white;
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.welcome-section h1 {
+    margin: 0;
+    color: #333;
+    font-size: 2em;
+}
+
+.welcome-section p {
+    color: #666;
+    font-size: 1.2em;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: transform 0.3s;
+}
+
+.image-section img:hover {
+    transform: scale(1.05);
+}
+
+.user-counts {
+    margin-top: 20px;
+}
+
+.user-counts h2 {
+    color: #4c53af;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.counts {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.count-item {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+    max-width: 300px;
+}
+
+.count-item h3 {
+    margin: 0 0 10px 0;
+    color: #333;
+    font-size: 1.5em;
+}
+
+.count-item p {
+    margin: 0;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.count-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

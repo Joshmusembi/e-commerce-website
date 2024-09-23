@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+        form {
+            max-width: 300px;
+            margin: auto;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        input[type="submit"], input[type="reset"] {
+            padding: 10px 15px;
+            margin: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Login Form</h2>
+<form action="login.php" method="post">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <input type="submit" value="Login">
+    <input type="reset" value="Reset">
+</form>
+
+<script>
+ 
+var i=0;  
+while (i<=20)  
+{  
+document.write(i + "&nbsp&nbsp&nbsp ");  
+i=i+3;  
+}  
+
+
+    </script>
+
+</body>
+</html>

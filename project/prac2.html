@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+    <script>
+        var i=100;  
+        while (i<=0)
+
+        {  
+        document.write(i + "<br/>")
+        i=i-2;  
+        }  
+        </script>  
+        
+</head>
+<body>
+    <h2>Form with Various Elements</h2>
+    <form action="process.php" method="post">
+        <!-- Text Box -->
+        <label for="textbox">Text Box:</label>
+        <input type="text" id="textbox" name="textbox" required>
+        <br><br>
+
+        <!-- Textarea -->
+        <label for="textarea">Textarea:</label>
+        <textarea id="textarea" name="textarea" rows="4" cols="50" required></textarea>
+        <br><br>
+
+        <!-- Dropdown Box -->
+        <label for="dropdown">Dropdown Box:</label>
+        <select id="dropdown" name="dropdown" required>
+            <option value="">Select an option</option>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+        </select>
+        <br><br>
+
+        <!-- Radio Buttons -->
+        <label>Radio Buttons:</label>
+        <br>
+        <input type="radio" id="radio1" name="radio" value="Choice 1" required>
+        <label for="radio1">Choice 1</label>
+        <br>
+        <input type="radio" id="radio2" name="radio" value="Choice 2">
+        <label for="radio2">Choice 2</label>
+        <br><br>
+
+        <!-- Checkbox -->
+        <input type="checkbox" id="checkbox" name="checkbox" value="Checked">
+        <label for="checkbox">Check me</label>
+        <input type="checkbox" id="checkbox" name="checkbox" value="Checked">
+        <label for="checkbox">Do so</label>
+        <br><br>
+
+        <!-- Submit and Reset Buttons -->
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
